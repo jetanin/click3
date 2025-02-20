@@ -4,37 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>กู้เงินด่วน 0%!!</title>
-    <style>
-        body {
-            background: red;
-            color: yellow;
-            text-align: center;
-            font-family: 'Comic Sans MS', cursive;
-            font-size: 24px;
-        }
-        .container {
-            margin-top: 50px;
-        }
-        .blink {
-            animation: blinker 0.8s infinite alternate;
-        }
-        @keyframes blinker {
-            from { opacity: 1; }
-            to { opacity: 0; }
-        }
-        button {
-            font-size: 28px;
-            background: yellow;
-            color: red;
-            padding: 15px;
-            border: 5px solid black;
-            cursor: pointer;
-        }
-        #progress {
-            font-size: 32px;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -43,15 +13,6 @@
         <button onclick="share()">แชร์ให้เพื่อน (คนละ 2,000 บาท)</button>
         <p id="progress">แชร์แล้ว 0 / 10</p>
     </div>
-    <script>
-        let shareCount = 0;
-        function share() {
-            shareCount++;
-            document.getElementById("progress").innerText = `แชร์แล้ว ${shareCount} / 10`;
-            if (shareCount >= 10) {
-                window.location.href = "congratulations.html";
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

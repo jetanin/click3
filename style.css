@@ -1,0 +1,29 @@
+body {
+    background: red;
+    color: yellow;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 24px;
+}
+.container {
+    margin-top: 50px;
+}
+.blink {
+    animation: blinker 0.8s infinite alternate;
+}
+@keyframes blinker {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+button {
+    font-size: 28px;
+    background: yellow;
+    color: red;
+    padding: 15px;
+    border: 5px solid black;
+    cursor: pointer;
+}
+#progress {
+    font-size: 32px;
+    margin-top: 20px;
+}
